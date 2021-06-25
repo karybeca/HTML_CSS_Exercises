@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather_Homework Week1</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #1a64d6;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+      h2 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      li :hover {
+        background: #fffbef;
+      }
+      button {
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+        color: white;
+        font-size: 16px;
+        background: #1a64d6;
+        padding: 15px 20px;
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .heading {
+        text-align: center;
+        font-size: xx-large;
+      }
+      .weighted {
+        font-weight: bold;
+      }
+      .days {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.17em;
+      }
+      .degrees {
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+        margin: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">&#9925;</div>
+    <h1>Currently 21&#176; in Tokyo</h1>
+    <h2>
+      13&#176; /
+      <span class="weighted"> 23&#176; </span>
+    </h2>
+    <ul>
+      <li>
+        🌧️; <span class="days"> Tomorrow </span>
+        <div class="degrees">
+          10&#176; / <span class="weighted"> 22&#176; </span>
+        </div>
+      </li>
+      <li>
+        🌥️; <span class="days"> Saturday </span>
+        <div class="degrees">
+          15&#176; /
+          <span class="weighted"> 17&#176; </span>
+        </div>
+      </li>
+      <li>
+       &#127774; <span class="days"> Sunday </span>
+        <div class="degrees">
+          25&#176; /
+          <span class="weighted"> 28&#176; </span>
+        </div>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <p>Coded by Karybeca</p>
+  </body>
+</html>
