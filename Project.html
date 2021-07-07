@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacations in Germany</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(187, 55, 26);
+      }
+
+      h2 {
+        text-align: center;
+        border: 5px solid rgb(213, 219, 179);
+        color: rgb(235, 168, 58);
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.3;
+        font-weight:inherit;
+        font-size: 17px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(187, 55, 26);
+        color: rgb(255, 248, 217);
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+        
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+
+      .learn-more {
+        color: rgb(235, 168, 58);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 100;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Vacations in Germany
+      </h1>
+      <h2>
+        Schwäbische Albs
+      </h2>
+      <hr>
+      <img
+        src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/03/hohenzollern-castle-in-cloud.jpg"
+        alt="Hohenzollern Castle"
+      />
+      <hr>
+      <p>
+        The <b>Swabian Jura</b>, sometimes also named <b>Swabian Alps</b> in English, is a mountain range in Baden-Württemberg, Germany, extending 220 km (140 mi) from southwest to northeast and 40 to 70 km (25 to 43 mi) in width. It is named after the region of Swabia.
+        <br/> 
+        <strong> The Swabian Jura </strong> occupies the region bounded by the Danube in the southeast and the upper Neckar in the northwest. In the southwest it rises to the higher mountains of the Black Forest. The highest mountain of the region is the Lemberg <em>(1,015 m (3,330 ft))</em>. The area's profile resembles a high plateau, which slowly falls away to the southeast. The northwestern edge is a steep escarpment (called the Albtrauf or Albanstieg, rising up 400 m (1,300 ft), covered with forests), while the top is flat or gently rolling.
+        economic and cultural terms, the Swabian Jura includes regions just around the mountain range. It is a popular recreation area.
+     </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Swabian_Jura"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="book-button">
+        Airbnb in the Albs
+      </button>
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/karybeca" target="_blank">
+          Karybeca
+        </a>
+      </p>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What is your name?");
+        let age = prompt ("What is your age?");
+        if (age <= 18) {
+           alert ("Sorry " + name + ", you can't apply to SheCodes.");
+         } 
+        else {
+           let dates = prompt("Which day you will like to stay?");
+           let email = prompt("What is your email address?");       
+           alert( "Thank you, " + name + "! We'll be in touch by email, Looking forward to see you in our Airbnb on the " + dates);
+          }
+        }
+      let bookButton = document.querySelector(".book-button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
